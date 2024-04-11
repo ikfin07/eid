@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    justify-content: space-between;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.125);
+    backdrop-filter: blur(5px);
+    font-family: "Bona Nova", serif;
+}
+
+.logo img {
+    width: 30px;
+}
+
+ul {
+    display: inline-flex;
+}
+
+li {
+    list-style: none;
+    margin-right: 40px;
+}
+
+li:nth-child(4) {
+
+    margin-right: 0;
+
+}
+
+a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    background-color: #fff;
+    height: 2px;
+    transition: width 300ms;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+main{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
+video{
+    width: 1550px;
+}
+
+aside{
+    width: 400px;
+    position: absolute;
+    top: 45%;
+    left: 100px;
+    color: #fff;
+    font-family: "poppins", sans-serif;
+}
+
+p{
+    font-size: 14px;
+}
+
+h1{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+button{
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 2px solid #009000;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    outline: 2px solid red;
+    border: none;
+    padding: 12px 27px;
+}
+
+.Eid{
+    margin-right: 10px;
+}
